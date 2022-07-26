@@ -1,6 +1,8 @@
 "use strict";
 
-var factorial = require('../maths/factorial');
+var _require = require('../maths/factorial'),
+    factorial = _require.factorial,
+    recursiveFactorial = _require.recursiveFactorial;
 
 describe('#factorial', function () {
   test('factorial(1) return 1', function () {

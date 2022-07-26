@@ -1,4 +1,4 @@
-const factorial = require('../maths/factorial');
+const {factorial,recursiveFactorial} = require('../maths/factorial');
 
 
 describe('#factorial', () => { 

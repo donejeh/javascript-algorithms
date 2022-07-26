@@ -13,4 +13,16 @@ function factorial(n){
 // console.log(factorial(5))
 // console.log(factorial(9))
 
-module.exports = factorial
+
+function recursiveFactorial(n){
+    if (n < 2) {
+        return 1
+    }
+
+    return n * recursiveFactorial(n-1)
+}
+//Big-O = O(n)
+
+console.log(recursiveFactorial(3))
+console.log(recursiveFactorial(9))
+module.exports = {factorial,recursiveFactorial}

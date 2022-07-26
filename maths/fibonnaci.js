@@ -10,4 +10,12 @@ function fib(n){
 //  console.log(fib(2))
 //  console.log(fib(5))
 //  console.log(fib(7))
-module.exports = fib
+
+function recursiveFibonacci(n){
+    if (n<2) {
+        return n
+    }
+    return recursiveFibonacci(n-1) + recursiveFibonacci(n-1)
+}
+
+module.exports = {fib,recursiveFibonacci}

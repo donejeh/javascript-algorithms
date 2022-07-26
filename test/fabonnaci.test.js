@@ -1,4 +1,4 @@
-const fib = require('../maths/fibonnaci')
+const {fib, recursiveFibonacci} = require('../maths/fibonnaci')
 
 
 describe('#fabonnaciTest', () => {
